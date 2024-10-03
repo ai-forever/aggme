@@ -103,5 +103,4 @@ ENV/
 
 # User added:
 /templates
-*.ipynb
 *.pth
