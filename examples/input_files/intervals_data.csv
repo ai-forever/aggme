@@ -1,0 +1,49 @@
+INPUT:video,OUTPUT:video,ASSIGNMENT:user_id
+case_000_ov3_cl1,"[{'begin':0.73027,'end':2.17368,'label':'interval','begin_frame':21,'end_frame':65}]",user_1
+case_000_ov3_cl1,"[{'begin':0.85214,'end':2.12798,'label':'interval','begin_frame':25,'end_frame':63}]",user_2
+case_000_ov3_cl1,"[{'begin':0.75699,'end':2.33033,'label':'interval','begin_frame':22,'end_frame':69}]",user_3
+case_000_ov3_cl2,"[{'begin':0.73027,'end':2.17368,'label':'interval','begin_frame':21,'end_frame':65},{'begin':2.73027,'end':3.17368,'label':'interval_two','begin_frame':80,'end_frame':93}]",user_1
+case_000_ov3_cl2,"[{'begin':0.85214,'end':2.12798,'label':'interval','begin_frame':25,'end_frame':63},{'begin':2.58214,'end':3.12798,'label':'interval_two','begin_frame':76,'end_frame':92}]",user_2
+case_000_ov3_cl2,"[{'begin':0.75699,'end':2.33033,'label':'interval','begin_frame':22,'end_frame':69},{'begin':2.57699,'end':3.17368,'label':'interval_two','begin_frame':76,'end_frame':93}]",user_3
+case_001_ov3_cl1_bad_interval,"[{'begin':0.50285,'end':2.17811,'label':'interval','begin_frame':15,'end_frame':65}]",user_1
+case_001_ov3_cl1_bad_interval,"[{'begin':0.96416,'end':2.02916,'label':'interval','begin_frame':28,'end_frame':60}]",user_2
+case_001_ov3_cl1_bad_interval,"[{'begin':0.80031,'end':1.83633,'label':'interval','begin_frame':6,'end_frame':55}]",user_3
+case_001_ov4_cl1_bad_interval,"[{'begin':0.50285,'end':2.17811,'label':'interval','begin_frame':15,'end_frame':65}]",user_1
+case_001_ov4_cl1_bad_interval,"[{'begin':0.96416,'end':2.02916,'label':'interval','begin_frame':28,'end_frame':60}]",user_2
+case_001_ov4_cl1_bad_interval,"[{'begin':0.80031,'end':1.83633,'label':'interval','begin_frame':6,'end_frame':55}]",user_3
+case_001_ov4_cl1_bad_interval,"[{'begin':1.01251,'end':2.17251,'label':'interval','begin_frame':30,'end_frame':65}]",user_4
+case_002_ov3_cl1_bad_intervals,"[{'begin':0.43481,'end':2.78724,'label':'interval','begin_frame':13,'end_frame':83}]",user_1
+case_002_ov3_cl1_bad_intervals,"[{'begin':0.84162,'end':2.28611,'label':'interval','begin_frame':25,'end_frame':68}]",user_2
+case_002_ov3_cl1_bad_intervals,"[{'begin':0.91916,'end':1.29749,'label':'interval','begin_frame':27,'end_frame':38},{'begin':1.55416,'end':2.12583,'label':'interval','begin_frame':46,'end_frame':63}]",user_3
+case_002_ov4_cl1_bad_intervals,"[{'begin':0.43481,'end':2.78724,'label':'interval','begin_frame':13,'end_frame':83}]",user_1
+case_002_ov4_cl1_bad_intervals,"[{'begin':0.84162,'end':2.28611,'label':'interval','begin_frame':25,'end_frame':68}]",user_2
+case_002_ov4_cl1_bad_intervals,"[{'begin':0.91916,'end':1.29749,'label':'interval','begin_frame':27,'end_frame':38},{'begin':1.55416,'end':2.12583,'label':'interval','begin_frame':46,'end_frame':63}]",user_3
+case_002_ov4_cl1_bad_intervals,"[{'begin':0.83251,'end':2.26751,'label':'interval','begin_frame':24,'end_frame':68}]",user_4
+case_003_ov3_cl1_add_interval,"[{'begin':0.73027,'end':2.17368,'label':'interval','begin_frame':21,'end_frame':65}]",user_1
+case_003_ov3_cl1_add_interval,"[{'begin':0.75699,'end':2.33033,'label':'interval','begin_frame':22,'end_frame':69}]",user_2
+case_003_ov3_cl1_add_interval,"[{'begin':0.85214,'end':2.12798,'label':'interval','begin_frame':25,'end_frame':63}, {'begin':2.17368,'end':2.55365,'label':'interval','begin_frame':65,'end_frame':75}]",user_3
+case_003_ov4_cl1_add_interval,"[{'begin':0.73027,'end':2.17368,'label':'interval','begin_frame':21,'end_frame':65}]",user_1
+case_003_ov4_cl1_add_interval,"[{'begin':0.75699,'end':2.33033,'label':'interval','begin_frame':22,'end_frame':69}]",user_2
+case_003_ov4_cl1_add_interval,"[{'begin':0.85214,'end':2.12798,'label':'interval','begin_frame':25,'end_frame':63}, {'begin':2.17368,'end':2.55365,'label':'interval','begin_frame':65,'end_frame':75}]",user_3
+case_003_ov4_cl1_add_interval,"[{'begin':0.85214,'end':2.12798,'label':'interval','begin_frame':25,'end_frame':63}]",user_4
+case_004_ov3_cl1_add_small_interval,"[{'begin':0.73027,'end':2.17368,'label':'interval','begin_frame':21,'end_frame':65}]",user_1
+case_004_ov3_cl1_add_small_interval,"[{'begin':0.75699,'end':2.33033,'label':'interval','begin_frame':22,'end_frame':69}]",user_2
+case_004_ov3_cl1_add_small_interval,"[{'begin':0.85214,'end':2.12798,'label':'interval','begin_frame':25,'end_frame':63}, {'begin':2.17368,'end':2.17368,'label':'interval','begin_frame':65,'end_frame':65}]",user_3
+case_004_ov4_cl1_add_small_interval,"[{'begin':0.73027,'end':2.17368,'label':'interval','begin_frame':21,'end_frame':65}]",user_1
+case_004_ov4_cl1_add_small_interval,"[{'begin':0.75699,'end':2.33033,'label':'interval','begin_frame':22,'end_frame':69}]",user_2
+case_004_ov4_cl1_add_small_interval,"[{'begin':0.85214,'end':2.12798,'label':'interval','begin_frame':25,'end_frame':63}, {'begin':2.17368,'end':2.17368,'label':'interval','begin_frame':65,'end_frame':65}]",user_3
+case_004_ov4_cl1_add_small_interval,"[{'begin':0.85214,'end':2.12798,'label':'interval','begin_frame':25,'end_frame':63}]",user_4
+case_005_ov3_cl1_rm_interval,"[{'begin':0.73027,'end':2.17368,'label':'interval','begin_frame':21,'end_frame':65}]",user_1
+case_005_ov3_cl1_rm_interval,"[{'begin':0.85214,'end':2.12798,'label':'interval','begin_frame':25,'end_frame':63}]",user_2
+case_005_ov3_cl1_rm_interval,"[{}]",user_3
+case_005_ov4_cl1_rm_interval,"[{'begin':0.73027,'end':2.17368,'label':'interval','begin_frame':21,'end_frame':65}]",user_1
+case_005_ov4_cl1_rm_interval,"[{'begin':0.85214,'end':2.12798,'label':'interval','begin_frame':25,'end_frame':63}]",user_2
+case_005_ov4_cl1_rm_interval,"[{}]",user_3
+case_005_ov4_cl1_rm_interval,"[{'begin':0.85214,'end':2.12798,'label':'interval','begin_frame':25,'end_frame':63}]",user_4
+case_006_ov3_cl1_other_interval,"[{'begin':0.73027,'end':2.17368,'label':'interval','begin_frame':21,'end_frame':65}]",user_1
+case_006_ov3_cl1_other_interval,"[{'begin':0.85214,'end':2.12798,'label':'interval','begin_frame':25,'end_frame':63}]",user_2
+case_006_ov3_cl1_other_interval,"[{'begin':0.75699,'end':2.33033,'label':'interval_two','begin_frame':22,'end_frame':69}]",user_3
+case_006_ov4_cl1_other_interval,"[{'begin':0.73027,'end':2.17368,'label':'interval','begin_frame':21,'end_frame':65}]",user_1
+case_006_ov4_cl1_other_interval,"[{'begin':0.85214,'end':2.12798,'label':'interval','begin_frame':25,'end_frame':63}]",user_2
+case_006_ov4_cl1_other_interval,"[{'begin':0.75699,'end':2.33033,'label':'interval_two','begin_frame':22,'end_frame':69}]",user_3
+case_006_ov4_cl1_other_interval,"[{'begin':0.85214,'end':2.12798,'label':'interval','begin_frame':25,'end_frame':63}]",user_4

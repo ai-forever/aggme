@@ -1,0 +1,8 @@
+matplotlib==3.9.0
+numpy==1.26.4
+opencv-python==4.10.0.84
+pandas==2.2.2
+pillow==10.4.0
+scikit-learn==1.5.0
+shapely==2.0.4
+tqdm==4.66.4

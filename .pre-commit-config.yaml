@@ -1,0 +1,58 @@
+fail_fast: false
+default_language_version:
+  python: python3.10
+repos:
+  - repo: https://github.com/psf/black
+    rev: 24.2.0
+    hooks:
+      - id: black
+        language_version: python3
+        args:
+          - "--line-length=88"
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+        language_version: python3
+        args:
+          - "--max-line-length=88"
+          - "--ignore=E203,E265,E309,E501,E265,W503"
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-ast
+      - id: check-yaml
+      - id: check-json
+      - id: check-toml
+      - id: check-xml
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-docstring-first
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: debug-statements
+      - id: trailing-whitespace
+      - id: fix-byte-order-marker
+      - id: end-of-file-fixer
+        exclude: ^examples/input_files/
+      - id: mixed-line-ending
+        exclude: ^examples/input_files/
+        args:
+          - --fix=lf
+  - repo: https://github.com/PyCQA/autoflake
+    rev: v2.2.1
+    hooks:
+      - id: autoflake
+        args:
+          - "-r"
+          - "--in-place"
+          - "--remove-all-unused-imports"
+          - "--ignore-init-module-imports"
+          - "--remove-unused-variables"
+          - "--remove-duplicate-keys"
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        args:
+          - "--profile=black"
