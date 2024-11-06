@@ -1,0 +1,380 @@
+[
+    {
+        "markup": [
+            {
+                "left": 0.38352333,
+                "top": 0.58824,
+                "width": 0.21245333,
+                "height": 0.19742,
+                "label": "gesture"
+            }
+        ],
+        "image": "case_000_ov3_cl1",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.18352333,
+                "top": 0.38824,
+                "width": 0.20962667,
+                "height": 0.18912,
+                "label": "no gesture"
+            },
+            {
+                "left": 0.38352333,
+                "top": 0.58824,
+                "width": 0.21245333,
+                "height": 0.19742,
+                "label": "gesture"
+            }
+        ],
+        "image": "case_000_ov3_cl2",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.38683,
+                "top": 0.58599667,
+                "width": 0.19322667,
+                "height": 0.22836667,
+                "label": "gesture"
+            }
+        ],
+        "image": "case_003_ov4_cl1_rm_box",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.38352333,
+                "top": 0.58824,
+                "width": 0.21245333,
+                "height": 0.19742,
+                "label": "gesture"
+            }
+        ],
+        "image": "case_004_ov3_cl1_mix",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.18352333,
+                "top": 0.38824,
+                "width": 0.20962667,
+                "height": 0.18912,
+                "label": "no gesture"
+            },
+            {
+                "left": 0.38352333,
+                "top": 0.58824,
+                "width": 0.21245333,
+                "height": 0.19742,
+                "label": "gesture"
+            }
+        ],
+        "image": "case_004_ov3_cl2_mix",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.18352333,
+                "top": 0.38824,
+                "width": 0.20962667,
+                "height": 0.18912,
+                "label": "gesture"
+            },
+            {
+                "left": 0.38352333,
+                "top": 0.58824,
+                "width": 0.21245333,
+                "height": 0.19742,
+                "label": "no gesture"
+            }
+        ],
+        "image": "case_004_ov3_cl2_mix_2",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.38755,
+                "top": 0.58293667,
+                "width": 0.20822667,
+                "height": 0.19394333,
+                "label": "gesture"
+            },
+            {
+                "left": 0.22333333,
+                "top": 0.44660333,
+                "width": 0.20750333,
+                "height": 0.2072,
+                "label": "no gesture"
+            }
+        ],
+        "image": "case_006_ov3_cl1_overlay",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.38755,
+                "top": 0.58293667,
+                "width": 0.20822667,
+                "height": 0.19394333,
+                "label": "gesture"
+            }
+        ],
+        "image": "case_006_ov3_cl2_overlay",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.38755,
+                "top": 0.58293667,
+                "width": 0.20822667,
+                "height": 0.19394333,
+                "label": "gesture"
+            },
+            {
+                "left": 0.42333333,
+                "top": 0.68660333,
+                "width": 0.20750333,
+                "height": 0.2072,
+                "label": "gesture"
+            }
+        ],
+        "image": "case_006_ov3_cl2_overlay_1",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.38755,
+                "top": 0.58293667,
+                "width": 0.20822667,
+                "height": 0.19394333,
+                "label": "gesture"
+            },
+            {
+                "left": 0.42333333,
+                "top": 0.68660333,
+                "width": 0.20750333,
+                "height": 0.2072,
+                "label": "no gesture"
+            }
+        ],
+        "image": "case_006_ov3_cl2_overlay_2",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.38755,
+                "top": 0.58293667,
+                "width": 0.20822667,
+                "height": 0.19394333,
+                "label": "no gesture"
+            },
+            {
+                "left": 0.42333333,
+                "top": 0.68660333,
+                "width": 0.20750333,
+                "height": 0.2072,
+                "label": "gesture"
+            }
+        ],
+        "image": "case_006_ov3_cl2_overlay_3",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.38755,
+                "top": 0.58293667,
+                "width": 0.20822667,
+                "height": 0.19394333,
+                "label": "no gesture"
+            },
+            {
+                "left": 0.42333333,
+                "top": 0.68660333,
+                "width": 0.20750333,
+                "height": 0.2072,
+                "label": "gesture"
+            }
+        ],
+        "image": "case_006_ov3_cl2_overlay_4",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.38683,
+                "top": 0.58599667,
+                "width": 0.19322667,
+                "height": 0.22836667,
+                "label": "gesture"
+            }
+        ],
+        "image": "case_001_ov4_cl1_add_small_boxes",
+        "method": "drop"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.18352333,
+                "top": 0.18352333,
+                "width": 0.20962667,
+                "height": 0.20962667,
+                "label": "no gesture"
+            },
+            {
+                "left": 0.38352333,
+                "top": 0.38352333,
+                "width": 0.21245333,
+                "height": 0.21245333,
+                "label": "gesture"
+            }
+        ],
+        "image": "case_001_ov4_cl2_add_small_boxes",
+        "method": "drop"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.38683,
+                "top": 0.58599667,
+                "width": 0.19322667,
+                "height": 0.22836667,
+                "label": "gesture"
+            }
+        ],
+        "image": "case_002_ov4_cl1_add_box",
+        "method": "drop"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.18683,
+                "top": 0.37266333,
+                "width": 0.1907,
+                "height": 0.23089333,
+                "label": "no gesture"
+            },
+            {
+                "left": 0.38683,
+                "top": 0.58599667,
+                "width": 0.19322667,
+                "height": 0.22836667,
+                "label": "gesture"
+            }
+        ],
+        "image": "case_003_ov4_cl2_rm_box",
+        "method": "drop"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.18024,
+                "top": 0.382355,
+                "width": 0.191035,
+                "height": 0.194825,
+                "label": "no gesture"
+            },
+            {
+                "left": 0.38352333,
+                "top": 0.58824,
+                "width": 0.21245333,
+                "height": 0.19742,
+                "label": "gesture"
+            }
+        ],
+        "image": "case_003_ov3_cl2_rm_box",
+        "method": "soft"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.384734,
+                "top": 0.580466,
+                "width": 0.213424,
+                "height": 0.20303,
+                "label": "gesture"
+            },
+            {
+                "left": 0.420584,
+                "top": 0.691966,
+                "width": 0.200506,
+                "height": 0.205336,
+                "label": "no gesture"
+            }
+        ],
+        "image": "case_007_ov5_cl2_overlay_1",
+        "method": "soft"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.384734,
+                "top": 0.580466,
+                "width": 0.213424,
+                "height": 0.20303,
+                "label": "no gesture"
+            },
+            {
+                "left": 0.420584,
+                "top": 0.691966,
+                "width": 0.200506,
+                "height": 0.205336,
+                "label": "gesture"
+            }
+        ],
+        "image": "case_007_ov5_cl2_overlay_2",
+        "method": "soft"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.384734,
+                "top": 0.580466,
+                "width": 0.213424,
+                "height": 0.20303,
+                "label": "gesture"
+            },
+            {
+                "left": 0.421615,
+                "top": 0.689955,
+                "width": 0.20313,
+                "height": 0.206035,
+                "label": "gesture"
+            }
+        ],
+        "image": "case_007_ov5_cl2_overlay_3",
+        "method": "soft"
+    },
+    {
+        "markup": [
+            {
+                "left": 0.38579,
+                "top": 0.5813925,
+                "width": 0.211475,
+                "height": 0.1996225,
+                "label": "gesture"
+            },
+            {
+                "left": 0.420584,
+                "top": 0.691966,
+                "width": 0.200506,
+                "height": 0.205336,
+                "label": "no gesture"
+            }
+        ],
+        "image": "case_007_ov5_cl2_overlay_4",
+        "method": "soft"
+    }
+]

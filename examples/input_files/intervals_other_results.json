@@ -1,0 +1,133 @@
+[
+    {
+        "markup": [
+            {
+                "left": 20.66666667,
+                "right": 60.66666667,
+                "label": "interval"
+            }
+        ],
+        "image": "case_000_ov3_cl1",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 22.66666667,
+                "right": 65.66666667,
+                "label": "interval"
+            },
+            {
+                "left": 77.33333333,
+                "right": 92.66666667,
+                "label": "interval"
+            }
+        ],
+        "image": "case_000_ov3_cl2",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 23.66666667,
+                "right": 63.66666667,
+                "label": "interval"
+            }
+        ],
+        "image": "case_005_ov4_cl1_rm_interval",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 22.66666667,
+                "right": 65.66666667,
+                "label": "interval"
+            }
+        ],
+        "image": "case_006_ov3_cl1_other_interval",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 20.0,
+                "right": 55.0,
+                "label": "interval"
+            },
+            {
+                "left": 60.0,
+                "right": 85.0,
+                "label": "interval_two"
+            }
+        ],
+        "image": "case_006_ov4_cl1_other_interval",
+        "method": "hard"
+    },
+    {
+        "markup": [
+            {
+                "left": 24.33333333,
+                "right": 63.33333333,
+                "label": "interval"
+            }
+        ],
+        "image": "case_001_ov4_cl1_bad_interval",
+        "method": "drop"
+    },
+    {
+        "markup": [
+            {
+                "left": 10.0,
+                "right": 50.0,
+                "label": "interval"
+            }
+        ],
+        "image": "case_002_ov4_cl1_bad_intervals",
+        "method": "drop"
+    },
+    {
+        "markup": [
+            {
+                "left": 22.66666667,
+                "right": 65.66666667,
+                "label": "interval"
+            }
+        ],
+        "image": "case_003_ov4_cl1_add_interval",
+        "method": "drop"
+    },
+    {
+        "markup": [
+            {
+                "left": 22.66666667,
+                "right": 65.66666667,
+                "label": "interval"
+            }
+        ],
+        "image": "case_004_ov4_cl1_add_small_interval",
+        "method": "drop"
+    },
+    {
+        "markup": [
+            {
+                "left": 22.66666667,
+                "right": 65.66666667,
+                "label": "interval"
+            }
+        ],
+        "image": "case_003_ov3_cl1_add_interval",
+        "method": "soft"
+    },
+    {
+        "markup": [
+            {
+                "left": 22.66666667,
+                "right": 65.66666667,
+                "label": "interval"
+            }
+        ],
+        "image": "case_004_ov3_cl1_add_small_interval",
+        "method": "soft"
+    }
+]

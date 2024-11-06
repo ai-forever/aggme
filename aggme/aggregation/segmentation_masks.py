@@ -1,3 +1,4 @@
+import json
 import math
 from itertools import combinations
 from typing import List, Optional, Tuple
@@ -79,6 +80,135 @@ class MaskAggregation(AbstractAggregation):
         label_with_markups = self._aggregate(group, threshold)
 
         return self._res_to_group(label_with_markups, group.name, method="_hard")
+
+    @staticmethod
+    def convert_and_save_markups(
+        results: dict,
+        file_name: str = None,
+    ) -> list:
+        """Convert to json and save markups
+
+        Parameters
+        ----------
+        results: dict
+            Aggregation results
+        file_name: str = None
+            File name to save
+
+        Yields
+        -------
+        list
+        """
+        keys = results.keys()
+        markup_results = []
+        for method in keys:
+            if method == "fail":
+                continue
+            for group in results[method]:
+                original_group, result_group, accepted, rejected = group
+                markup_result = []
+                for i, markup in enumerate(result_group.data):
+                    points = markup.expand_markup().tolist()
+                    data_class = {
+                        "points": points,
+                        "label": markup.label,
+                    }
+                    markup_result.append(data_class)
+                markup_results.append(
+                    {
+                        "markup": markup_result,
+                        "image": group[0].name,
+                        "method": method,
+                    }
+                )
+
+        if file_name:
+            json_data = json.dumps(markup_results, indent=4)
+            with open(file_name, "w", encoding="utf-8") as f:
+                f.write(json_data)
+
+        return markup_results
+
+    @staticmethod
+    def markups_comparison(
+        results1: dict,
+        results2: dict,
+        threshold: float = 1.0,
+    ) -> list:
+        """Markups comparison
+
+        Parameters
+        ----------
+        results1: dict
+            Aggregation results
+        results2: dict
+            Aggregation results
+        threshold: float = 1.0
+            IoU threshold
+
+        Yields
+        -------
+        list
+        """
+        comparison_results = []
+        for element1 in results1:
+            image1 = element1["image"]
+            element2 = None
+            # ищем совпадение по image
+            for element2 in results2:
+                image2 = element2["image"]
+                if image1 == image2:
+                    break
+                element2 = None
+            # сравниваем найденный image
+            if element2:
+                classes1 = [markup["label"] for markup in element1["markup"]]
+                classes2 = [markup["label"] for markup in element2["markup"]]
+                count_match = len(classes1) == len(classes2)
+                class_count_match = len(set(classes1)) == len(set(classes2))
+
+                good_indexes = []
+                markup_data1 = element1["markup"].copy()
+                markup_data2 = element2["markup"].copy()
+                for index1, markup1 in enumerate(markup_data1):
+                    max_iou = -1
+                    max_iou_index2 = -1
+                    for index2, markup2 in enumerate(markup_data2):
+                        # Переводим маски в бинарные (1 и 0)
+                        mask1 = np.array(markup1["points"])
+                        mask2 = np.array(markup2["points"])
+                        # Вычисляем числа пересечений и объединений
+                        intersection = np.sum(np.logical_and(mask1, mask2))
+                        union = np.sum(np.logical_or(mask1, mask2))
+                        # IoU вычисляется как отношение числа пересечений к числу объединений
+                        iou = round(intersection / float(union + 1e-10), 2)
+                        assert 0.0 <= iou <= 1.0
+                        if max_iou < iou:
+                            max_iou = iou
+                            max_iou_index2 = index2
+
+                    if max_iou >= threshold:
+                        good_indexes.append(index1)
+                        del markup_data2[max_iou_index2]
+
+                iou_match_percent = int((len(good_indexes) / len(markup_data1)) * 100)
+
+                comparison_result = {
+                    "image": image1,
+                    "count_match": count_match,
+                    "class_count_match": class_count_match,
+                    "iou_match_percent": iou_match_percent,
+                }
+                comparison_results.append(comparison_result)
+            else:
+                comparison_result = {
+                    "image": image1,
+                    "count_match": None,
+                    "class_count_match": None,
+                    "iou_match_percent": None,
+                }
+                comparison_results.append(comparison_result)
+        return comparison_results
 
     @staticmethod
     def _res_to_group(
